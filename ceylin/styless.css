@@ -1,0 +1,80 @@
+:root{ 
+    --yellow: #f9ca24;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,300;1,400&family=Nunito:wght@200;300;400;600&family=Poppins:wght@100;300;400;500;600&display=swap');
+*{
+    font-family: 'Nunito', sans-serif; 
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+
+
+}
+
+*::selection{
+    background: var(--yellow);
+    color: #333;
+}
+
+html{ 
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{ 
+    width: 1.4rem;
+
+
+}
+
+html ::-webkit-scrollbar-track{
+background: #222;
+
+}
+ html::-webkit-scrollbar-thumb{
+    background: var(--yellow);
+ }
+
+ body{
+    background: #111;
+    overflow-x: hidden;
+    
+ }
+
+
+ section{
+    min-height: 100vh;
+    padding: 1rem;
+ }
+ .çalışmalarım .box-container{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+
+.çalışmalarım  .box-container .box{
+    height: 40rem;
+    width: 52rem;
+    border-radius: 1rem;
+    margin: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.çalışmalarım  .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.çalışmalarım  .box-container .box:hover img{
+    transform: scale(1.2);
+}
